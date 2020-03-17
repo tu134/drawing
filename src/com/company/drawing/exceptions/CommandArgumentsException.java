@@ -1,4 +1,4 @@
-package com.company.drawing.commands;
+package com.company.drawing.exceptions;
 
 public class CommandArgumentsException extends RuntimeException {
     public CommandArgumentsException() {

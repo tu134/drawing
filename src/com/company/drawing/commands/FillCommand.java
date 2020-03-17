@@ -2,6 +2,7 @@ package com.company.drawing.commands;
 
 import com.company.drawing.drawables.Fill;
 import com.company.drawing.canvas.Canvas;
+import com.company.drawing.exceptions.CommandArgumentsException;
 
 public class FillCommand implements Command {
     private Canvas canvas;
@@ -13,7 +14,7 @@ public class FillCommand implements Command {
         if (args == null)
             throw new CommandArgumentsException();
 
-        if (args.length < 3)
+        if (args.length != 3)
             throw new CommandArgumentsException();
 
         try {

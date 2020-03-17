@@ -2,6 +2,7 @@ package com.company.drawing.commands;
 
 import com.company.drawing.drawables.Line;
 import com.company.drawing.canvas.Canvas;
+import com.company.drawing.exceptions.CommandArgumentsException;
 
 public class LineCommand implements Command {
     private Canvas canvas;
@@ -13,7 +14,7 @@ public class LineCommand implements Command {
         if (args == null)
             throw new CommandArgumentsException();
 
-        if (args.length < 4)
+        if (args.length != 4)
             throw new CommandArgumentsException();
 
         try {

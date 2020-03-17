@@ -1,9 +1,10 @@
 package com.company.drawing;
 
-import com.company.drawing.commands.Command;
-import com.company.drawing.commands.CommandFactory;
-import com.company.drawing.commands.ExitCommand;
+import com.company.drawing.commands.*;
 import com.company.drawing.canvas.TextCanvas;
+import com.company.drawing.exceptions.CommandArgumentsException;
+import com.company.drawing.exceptions.CommandInvalidException;
+import com.company.drawing.exceptions.ExitCommandException;
 
 import java.util.Scanner;
 
@@ -22,12 +23,16 @@ public class Main {
             try {
                 Command command = commandFactory.getCommand(line);
                 if(command == null) continue;
-                if(command instanceof ExitCommand) {
-                    break;
-                }
                 command.execute();
 
                 System.out.println(textCanvas.toString());
+            } catch (CommandInvalidException e) {
+                System.out.println(String.format("You entered invalid command."));
+            } catch (CommandArgumentsException e) {
+                System.out.println(String.format("Invalid arguments for command."));
+            } catch (ExitCommandException e) {
+                System.out.println(String.format("Exiting..."));
+                break;
             } catch (Exception e) {
                 System.out.println(String.format("exception: %s", e.getMessage()));
             }

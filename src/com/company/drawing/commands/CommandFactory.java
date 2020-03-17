@@ -1,6 +1,7 @@
 package com.company.drawing.commands;
 
 import com.company.drawing.canvas.Canvas;
+import com.company.drawing.exceptions.CommandInvalidException;
 
 import java.util.Arrays;
 

@@ -1,6 +1,7 @@
 package com.company.drawing.commands;
 
 import com.company.drawing.canvas.Canvas;
+import com.company.drawing.exceptions.CommandArgumentsException;
 
 public class CreateCommand implements Command {
     private Canvas canvas;
@@ -13,7 +14,7 @@ public class CreateCommand implements Command {
         if (args == null)
             throw new CommandArgumentsException();
 
-        if (args.length < 2)
+        if (args.length != 2)
             throw new CommandArgumentsException();
 
         try {
