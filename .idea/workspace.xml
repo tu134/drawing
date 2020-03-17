@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="338df213-c776-4d65-941b-e57986733bcb" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZCivDc6tqN8qUXji8w4nRTADHz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="jdk.selected.PLUGIN_MODULE" value="IntelliJ IDEA Community Edition IC-191.6707.61" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pavel-demo" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.company.drawing" />
+      <recent name="com.company.drawing.commands" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.drawing.Main" />
+      <module name="drawing" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="338df213-c776-4d65-941b-e57986733bcb" name="Default Changelist" comment="" />
+      <created>1584279617951</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584279617951</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1368" y="198" width="816" height="729" key="#Intentions" timestamp="1584350020478">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1368" y="198" width="816" height="729" key="#Intentions/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584350020478" />
+    <state x="-1155" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1584448249112">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1155" y="249" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584448249112" />
+    <state x="-1235" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584450059005">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1235" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584450059005" />
+    <state x="-1230" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584449842117">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1230" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584449842117" />
+    <state x="-1180" y="295" key="FileChooserDialogImpl" timestamp="1584409717470">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1180" y="295" key="FileChooserDialogImpl/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584409717470" />
+    <state width="1877" height="130" key="GridCell.Tab.0.bottom" timestamp="1584449978322">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="130" key="GridCell.Tab.0.bottom/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584449978322" />
+    <state width="1877" height="130" key="GridCell.Tab.0.center" timestamp="1584449978322">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="130" key="GridCell.Tab.0.center/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584449978322" />
+    <state width="1877" height="130" key="GridCell.Tab.0.left" timestamp="1584449978322">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="130" key="GridCell.Tab.0.left/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584449978322" />
+    <state width="1877" height="130" key="GridCell.Tab.0.right" timestamp="1584449978322">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="130" key="GridCell.Tab.0.right/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584449978322" />
+    <state x="-1480" y="114" key="SettingsEditor" timestamp="1584350809091">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1480" y="114" key="SettingsEditor/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584350809091" />
+    <state x="-1259" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1584349719507">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1259" y="364" key="com.intellij.ide.util.TipDialog/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584349719507" />
+    <state x="-1256" y="433" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1584350375975">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1256" y="433" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584350375975" />
+    <state x="-1196" y="243" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1584350787223">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1196" y="243" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584350787223" />
+    <state x="-1264" y="138" width="607" height="804" key="find.popup" timestamp="1584364483469">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1264" y="138" width="607" height="804" key="find.popup/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584364483469" />
+    <state x="-1578" y="160" key="new project wizard" timestamp="1584439888674">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1578" y="160" key="new project wizard/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584439888674" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/drawing$Main.ic" NAME="Main Coverage Results" MODIFIED="1584331418340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
