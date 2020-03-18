@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="338df213-c776-4d65-941b-e57986733bcb" name="Default Changelist" comment="" />
+    <list default="true" id="338df213-c776-4d65-941b-e57986733bcb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/drawing.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/drawing/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/drawing/canvas/Canvas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/drawing/canvas/TextCanvas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/drawing/canvas/TextGraphics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/drawing/commands/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/drawing/commands/CommandFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/drawing/commands/CreateCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/drawing/commands/DrawCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/drawing/commands/ExitCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/drawing/commands/FillCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/drawing/commands/LineCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/drawing/commands/RectangleCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/drawing/drawables/Drawable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/drawing/drawables/Fill.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/drawing/drawables/Line.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/drawing/drawables/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/drawing/exceptions/CommandArgumentsException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/drawing/exceptions/CommandInvalidException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/company/drawing/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/company/drawing/canvas/TextCanvasTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/company/drawing/canvas/TextGraphicsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/company/drawing/commands/CommandFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/company/drawing/commands/FillCommandTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/company/drawing/commands/LineCommandTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/company/drawing/commands/RectangleCommandTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/company/drawing/drawables/FillTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/company/drawing/drawables/LineTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/company/drawing/drawables/RectangleTest.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,13 +46,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZCivDc6tqN8qUXji8w4nRTADHz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -31,8 +67,10 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="jdk.selected.PLUGIN_MODULE" value="IntelliJ IDEA Community Edition IC-191.6707.61" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../pavel-demo" />
@@ -42,20 +80,78 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.company.drawing" />
+      <recent name="com.company.drawing.canvas" />
       <recent name="com.company.drawing.commands" />
+      <recent name="com.company.drawing.drawables" />
+      <recent name="com.company.drawing" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.drawing.Main" />
       <module name="drawing" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.drawing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in drawing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="drawing" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommandFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="drawing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.drawing.commands.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.drawing.commands" />
+      <option name="MAIN_CLASS_NAME" value="com.company.drawing.commands.CommandFactoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LineCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="drawing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.drawing.commands.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.drawing.commands" />
+      <option name="MAIN_CLASS_NAME" value="com.company.drawing.commands.LineCommandTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextGraphicsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="drawing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.drawing.canvas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.drawing.canvas" />
+      <option name="MAIN_CLASS_NAME" value="com.company.drawing.canvas.TextGraphicsTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -63,6 +159,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.TextGraphicsTest" />
+        <item itemvalue="JUnit.All in drawing" />
+        <item itemvalue="JUnit.CommandFactoryTest" />
+        <item itemvalue="JUnit.LineCommandTest" />
       </list>
     </recent_temporary>
   </component>
@@ -84,42 +184,58 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1368" y="198" width="816" height="729" key="#Intentions/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584350020478" />
-    <state x="-1155" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1584448249112">
+    <state x="-1155" y="249" key="#com.intellij.ide.util.MemberChooser" timestamp="1584500364825">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1155" y="249" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584448249112" />
+    <state x="-1155" y="249" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584500364825" />
     <state x="-1235" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584450059005">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1235" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584450059005" />
-    <state x="-1230" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584449842117">
+    <state x="-1230" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584500091314">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1230" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584449842117" />
+    <state x="-1230" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584500091314" />
     <state x="-1180" y="295" key="FileChooserDialogImpl" timestamp="1584409717470">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1180" y="295" key="FileChooserDialogImpl/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584409717470" />
-    <state width="1877" height="130" key="GridCell.Tab.0.bottom" timestamp="1584449978322">
+    <state width="1877" height="269" key="GridCell.Tab.0.bottom" timestamp="1584511396732">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="130" key="GridCell.Tab.0.bottom/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584449978322" />
-    <state width="1877" height="130" key="GridCell.Tab.0.center" timestamp="1584449978322">
+    <state width="1877" height="269" key="GridCell.Tab.0.bottom/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584511396732" />
+    <state width="1877" height="269" key="GridCell.Tab.0.center" timestamp="1584511396731">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="130" key="GridCell.Tab.0.center/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584449978322" />
-    <state width="1877" height="130" key="GridCell.Tab.0.left" timestamp="1584449978322">
+    <state width="1877" height="269" key="GridCell.Tab.0.center/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584511396731" />
+    <state width="1877" height="269" key="GridCell.Tab.0.left" timestamp="1584511396731">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="130" key="GridCell.Tab.0.left/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584449978322" />
-    <state width="1877" height="130" key="GridCell.Tab.0.right" timestamp="1584449978322">
+    <state width="1877" height="269" key="GridCell.Tab.0.left/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584511396731" />
+    <state width="1877" height="269" key="GridCell.Tab.0.right" timestamp="1584511396731">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="130" key="GridCell.Tab.0.right/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584449978322" />
-    <state x="-1480" y="114" key="SettingsEditor" timestamp="1584350809091">
+    <state width="1877" height="269" key="GridCell.Tab.0.right/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584511396731" />
+    <state width="1877" height="248" key="GridCell.Tab.1.bottom" timestamp="1584455248743">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1480" y="114" key="SettingsEditor/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584350809091" />
+    <state width="1877" height="248" key="GridCell.Tab.1.bottom/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584455248743" />
+    <state width="1877" height="248" key="GridCell.Tab.1.center" timestamp="1584455248743">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="248" key="GridCell.Tab.1.center/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584455248743" />
+    <state width="1877" height="248" key="GridCell.Tab.1.left" timestamp="1584455248743">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="248" key="GridCell.Tab.1.left/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584455248743" />
+    <state width="1877" height="248" key="GridCell.Tab.1.right" timestamp="1584455248743">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="248" key="GridCell.Tab.1.right/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584455248743" />
+    <state x="-1480" y="114" key="SettingsEditor" timestamp="1584508116483">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1480" y="114" key="SettingsEditor/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584508116483" />
     <state x="-1259" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1584349719507">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
@@ -128,18 +244,22 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1256" y="433" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584350375975" />
-    <state x="-1196" y="243" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1584350787223">
+    <state x="-1196" y="243" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1584503808301">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1196" y="243" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584350787223" />
-    <state x="-1264" y="138" width="607" height="804" key="find.popup" timestamp="1584364483469">
+    <state x="-1196" y="243" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584503808301" />
+    <state x="-1264" y="138" width="607" height="804" key="find.popup" timestamp="1584508564534">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="-1264" y="138" width="607" height="804" key="find.popup/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584364483469" />
+    <state x="-1264" y="138" width="607" height="804" key="find.popup/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584508564534" />
     <state x="-1578" y="160" key="new project wizard" timestamp="1584439888674">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1578" y="160" key="new project wizard/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584439888674" />
+    <state x="-1297" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1584459443649">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1297" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1584459443649" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/drawing$Main.ic" NAME="Main Coverage Results" MODIFIED="1584331418340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
