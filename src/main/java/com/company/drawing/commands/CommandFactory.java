@@ -20,7 +20,7 @@ public class CommandFactory {
 
     public static CommandParams parse(String rawInput)
     {
-        var cmdArgs = rawInput.split("\\W+");
+        String[] cmdArgs = rawInput.split("\\W+");
         String[] args = Arrays.copyOfRange(cmdArgs, 1, cmdArgs.length);
         return new CommandParams(cmdArgs[0], args);
     }

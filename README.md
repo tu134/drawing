@@ -31,7 +31,7 @@ Assumptions. The application does not prompt the user when lines (wholly or part
  
 ### Build and run ###
 
-You can use IDEA or Maven to run main app and unit-tests. (I was using Java 12)
+You can use IDEA or Maven to run main app and unit-tests. You should Java 12.
 *  IDEA. The main app and unit-tests can be built and ran in the usual way in IDEA
 *  Maven run main app: `mvn exec:java`, unit-tests: `mvn test`, create JAR: `mvn package`
 *  Run pre-built jar from command line `java -jar console-drawing-1.0.jar`

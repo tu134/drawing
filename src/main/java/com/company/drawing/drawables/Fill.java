@@ -39,18 +39,18 @@ public class Fill implements Drawable {
         if (x < 1 || x > canvas.getWidth() || y < 0 || y > canvas.getHeight()) return;
         int tc = canvas.getPixel(x, y);
         if (tc == color) return;
-        var queue = new ArrayDeque<Point>();
+        ArrayDeque<Point> queue = new ArrayDeque<>();
         queue.add(new Point(x, y));
 
         while (queue.size() > 0)
         {
-            var n = queue.remove();
-            var w = new Point(n);
-            var e = new Point(n);
+            Point n = queue.remove();
+            Point w = new Point(n);
+            Point e = new Point(n);
             while (w.x - 1 >= 1 && canvas.getPixel(w.x - 1, w.y) == tc) --w.x;
             while (e.x + 1 <= canvas.getWidth() && canvas.getPixel(e.x + 1, e.y) == tc) ++e.x;
 
-            for (var i = w.x; i <= e.x; ++i)
+            for (int i = w.x; i <= e.x; ++i)
             {
                 canvas.setPixel(i, n.y, color);
                 if (n.y - 1 >= 1 && canvas.getPixel(i, n.y - 1) == tc)

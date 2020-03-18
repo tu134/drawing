@@ -57,10 +57,10 @@ public class TextCanvas implements Canvas {
     public String toString()
     {
         if (buffer == null) return "";
-        var builder = new StringBuilder();
+        StringBuilder builder = new StringBuilder();
 
         builder.append("-".repeat(getWidth() + 2)).append(System.lineSeparator());
-        for (var i = 0; i < getHeight(); ++i)
+        for (int i = 0; i < getHeight(); ++i)
         {
             char[] part = new char[getWidth()];
             if (getWidth() >= 0) System.arraycopy(buffer, i * getWidth(), part, 0, getWidth());

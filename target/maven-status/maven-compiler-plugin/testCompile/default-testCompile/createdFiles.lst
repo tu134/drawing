@@ -1,0 +1,10 @@
+com\company\drawing\Utils.class
+com\company\drawing\drawables\LineTest.class
+com\company\drawing\canvas\TextCanvasTest.class
+com\company\drawing\commands\FillCommandTest.class
+com\company\drawing\drawables\RectangleTest.class
+com\company\drawing\drawables\FillTest.class
+com\company\drawing\commands\CommandFactoryTest.class
+com\company\drawing\canvas\TextGraphicsTest.class
+com\company\drawing\commands\RectangleCommandTest.class
+com\company\drawing\commands\LineCommandTest.class
