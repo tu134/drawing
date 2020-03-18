@@ -46,6 +46,20 @@ public class LineTest {
                 "----------------------"
         };
         Assert.assertEquals(Convert(expected2), textCanvas.toString());
+    }
 
+    @Test
+    public void draw2() {
+        Line line = new Line(2, 1, 17, 3);
+        line.draw(textCanvas);
+        String[] expected2 = {
+                "----------------------",
+                "| xxxx               |",
+                "|     xxxxxxxx       |",
+                "|             xxxx   |",
+                "|                    |",
+                "----------------------"
+        };
+        Assert.assertEquals(Convert(expected2), textCanvas.toString());
     }
 }
