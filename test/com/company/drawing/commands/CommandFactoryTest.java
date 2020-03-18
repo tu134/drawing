@@ -25,6 +25,7 @@ public class CommandFactoryTest {
     }
 
     @Test
+    public void getCommandLine() {
         Command command = commandFactory.getCommand("L 1 2 2 3");
         Assert.assertTrue(command instanceof LineCommand);
     }
