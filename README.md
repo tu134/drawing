@@ -27,6 +27,8 @@ I was using `IDEA` to build and run main app and unit-tests.
 The main code having no much complexity which may call for extra comments or documentation and usage is illustrated by unit-tests and main app itself. 
 I was trying to balance and not to slip to over-design and over-commenting.  
 
+Assumptions. The application does not prompt the user when lines (wholly or partially) are drawn beyond the visible area. The visible part only will be drawn in this case.     
+ 
 ### Build and run ###
 
 You can use IDEA or Maven to run main app and unit-tests. (I was using Java 12)

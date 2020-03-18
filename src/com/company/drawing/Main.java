@@ -11,7 +11,6 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
         TextGraphics textGraphics = null;
         CommandFactory commandFactory = new CommandFactory();
         Scanner in = new Scanner(System.in);
