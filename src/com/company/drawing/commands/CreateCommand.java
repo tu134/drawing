@@ -4,13 +4,15 @@ import com.company.drawing.canvas.Canvas;
 import com.company.drawing.exceptions.CommandArgumentsException;
 
 public class CreateCommand implements Command {
-    private Canvas canvas;
     private int width;
     private int height;
 
-    public CreateCommand(Canvas canvas, String[] args)
+    public int getWidth() { return width; }
+
+    public int getHeight() { return height; }
+
+    public CreateCommand(String[] args)
     {
-        this.canvas = canvas;
         if (args == null)
             throw new CommandArgumentsException();
 
@@ -29,10 +31,4 @@ public class CreateCommand implements Command {
             throw new CommandArgumentsException();
         }
     }
-
-    public void execute()
-    {
-        canvas.init(width, height);
-    }
-
 }

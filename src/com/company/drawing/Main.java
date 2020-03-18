@@ -1,10 +1,10 @@
 package com.company.drawing;
 
+import com.company.drawing.canvas.TextGraphics;
 import com.company.drawing.commands.*;
-import com.company.drawing.canvas.TextCanvas;
+import com.company.drawing.drawables.Drawable;
 import com.company.drawing.exceptions.CommandArgumentsException;
 import com.company.drawing.exceptions.CommandInvalidException;
-import com.company.drawing.exceptions.ExitCommandException;
 
 import java.util.Scanner;
 
@@ -12,27 +12,42 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        TextCanvas textCanvas = new TextCanvas();
-        CommandFactory commandFactory = new CommandFactory(textCanvas);
+        TextGraphics textGraphics = null;
+        CommandFactory commandFactory = new CommandFactory();
         Scanner in = new Scanner(System.in);
 
         while(true) {
             System.out.print("enter command: ");
             String line = in.nextLine();
-            if(line == null) break;
-            try {
-                Command command = commandFactory.getCommand(line);
-                if(command == null) continue;
-                command.execute();
+            if(line == null || line.trim().length() == 0) continue;
 
-                System.out.println(textCanvas.toString());
+            Command command;
+
+            try {
+                command = commandFactory.getCommand(line);
+                if(command instanceof ExitCommand) {
+                    System.out.println(String.format("Exiting..."));
+                    break;
+                }
+                if(command instanceof CreateCommand) {
+                    CreateCommand createCommand = (CreateCommand)command;
+                    textGraphics = new TextGraphics(createCommand.getWidth(), createCommand.getHeight());
+                }
+                if(command instanceof DrawCommand) {
+                    if(textGraphics == null) {
+                        System.out.println(String.format("Canvas not created yet."));
+                        continue;
+                    }
+                    DrawCommand drawCommand = (DrawCommand)command;
+                    Drawable drawable = drawCommand.getDrawable();
+                    textGraphics.addDrawable(drawable);
+                }
+
+                System.out.println(textGraphics.toString());
             } catch (CommandInvalidException e) {
                 System.out.println(String.format("You entered invalid command."));
             } catch (CommandArgumentsException e) {
                 System.out.println(String.format("Invalid arguments for command."));
-            } catch (ExitCommandException e) {
-                System.out.println(String.format("Exiting..."));
-                break;
             } catch (Exception e) {
                 System.out.println(String.format("exception: %s", e.getMessage()));
             }

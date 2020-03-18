@@ -1,16 +1,14 @@
 package com.company.drawing.commands;
 
+import com.company.drawing.drawables.Drawable;
 import com.company.drawing.drawables.Rectangle;
-import com.company.drawing.canvas.Canvas;
 import com.company.drawing.exceptions.CommandArgumentsException;
 
-public class RectangleCommand implements Command {
-    private Canvas canvas;
+public class RectangleCommand implements DrawCommand {
     private Rectangle rectangle;
 
-    public RectangleCommand(Canvas canvas, String[] args)
+    public RectangleCommand(String[] args)
     {
-        this.canvas = canvas;
         if (args == null)
             throw new CommandArgumentsException();
 
@@ -34,9 +32,8 @@ public class RectangleCommand implements Command {
         }
     }
 
-    public void execute()
-    {
-        rectangle.draw(canvas);
+    @Override
+    public Drawable getDrawable() {
+        return rectangle;
     }
-
 }

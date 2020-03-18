@@ -1,6 +1,7 @@
 package com.company.drawing.commands;
 
 import com.company.drawing.canvas.TextCanvas;
+import com.company.drawing.drawables.Drawable;
 import com.company.drawing.drawables.Line;
 import com.company.drawing.drawables.Rectangle;
 import org.junit.After;
@@ -25,8 +26,11 @@ public class RectangleCommandTest {
 
     @Test
     public void execute() {
-        RectangleCommand rectangleCommand = new RectangleCommand(textCanvas, new String[]{"14", "1", "18", "3"});
-        rectangleCommand.execute();
+        RectangleCommand rectangleCommand = new RectangleCommand(new String[]{"14", "1", "18", "3"});
+        Drawable drawable = rectangleCommand.getDrawable();
+        Assert.assertTrue(drawable instanceof Rectangle);
+        Rectangle rectangle = (Rectangle)drawable;
+        rectangle.draw(textCanvas);
 
         String[] expected = {
                 "----------------------",

@@ -1,16 +1,14 @@
 package com.company.drawing.commands;
 
+import com.company.drawing.drawables.Drawable;
 import com.company.drawing.drawables.Fill;
-import com.company.drawing.canvas.Canvas;
 import com.company.drawing.exceptions.CommandArgumentsException;
 
-public class FillCommand implements Command {
-    private Canvas canvas;
+public class FillCommand implements DrawCommand {
     private Fill fill;
 
-    public FillCommand(Canvas canvas, String[] args)
+    public FillCommand(String[] args)
     {
-        this.canvas = canvas;
         if (args == null)
             throw new CommandArgumentsException();
 
@@ -33,9 +31,8 @@ public class FillCommand implements Command {
         }
     }
 
-    public void execute()
-    {
-        fill.draw(canvas);
+    @Override
+    public Drawable getDrawable() {
+        return fill;
     }
-
 }

@@ -1,16 +1,15 @@
 package com.company.drawing.commands;
 
+import com.company.drawing.drawables.Drawable;
 import com.company.drawing.drawables.Line;
 import com.company.drawing.canvas.Canvas;
 import com.company.drawing.exceptions.CommandArgumentsException;
 
-public class LineCommand implements Command {
-    private Canvas canvas;
+public class LineCommand implements DrawCommand {
     private Line line;
 
-    public LineCommand(Canvas canvas, String[] args)
+    public LineCommand(String[] args)
     {
-        this.canvas = canvas;
         if (args == null)
             throw new CommandArgumentsException();
 
@@ -34,10 +33,9 @@ public class LineCommand implements Command {
         }
     }
 
-    public void execute()
-    {
-        line.draw(canvas);
+    @Override
+    public Drawable getDrawable() {
+        return line;
     }
-
 }
 

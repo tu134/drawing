@@ -1,6 +1,7 @@
 package com.company.drawing.commands;
 
 import com.company.drawing.canvas.TextCanvas;
+import com.company.drawing.drawables.Drawable;
 import com.company.drawing.drawables.Fill;
 import com.company.drawing.drawables.Line;
 import com.company.drawing.drawables.Rectangle;
@@ -31,8 +32,11 @@ public class FillCommandTest {
     @Test
     public void execute() {
 
-        FillCommand fillCommand = new FillCommand(textCanvas, new String[] {"10", "3", "o"});
-        fillCommand.execute();
+        FillCommand fillCommand = new FillCommand(new String[] {"10", "3", "o"});
+        Drawable drawable = fillCommand.getDrawable();
+        Assert.assertTrue(drawable instanceof Fill);
+        Fill fill = (Fill)drawable;
+        fill.draw(textCanvas);
 
         String[] expected = {
                 "----------------------",

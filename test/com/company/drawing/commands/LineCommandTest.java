@@ -1,6 +1,7 @@
 package com.company.drawing.commands;
 
 import com.company.drawing.canvas.TextCanvas;
+import com.company.drawing.drawables.Drawable;
 import com.company.drawing.drawables.Line;
 import org.junit.After;
 import org.junit.Assert;
@@ -24,8 +25,13 @@ public class LineCommandTest {
 
     @Test
     public void execute() {
-        LineCommand lineCommand = new LineCommand(textCanvas, new String[]{"1", "2", "6", "2"});
-        lineCommand.execute();
+        LineCommand lineCommand = new LineCommand(new String[]{"1", "2", "6", "2"});
+        Drawable drawable = lineCommand.getDrawable();
+        Assert.assertTrue(drawable instanceof Line);
+        Line line = (Line)drawable;
+        line.draw(textCanvas);
+
+
         String[] expected = {
                 "----------------------",
                 "|                    |",
