@@ -2,7 +2,6 @@ package com.company.drawing.commands;
 
 import com.company.drawing.drawables.Drawable;
 import com.company.drawing.drawables.Line;
-import com.company.drawing.canvas.Canvas;
 import com.company.drawing.exceptions.CommandArgumentsException;
 
 public class LineCommand implements DrawCommand {

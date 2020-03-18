@@ -7,7 +7,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static com.company.drawing.Utils.Convert;
-import static org.junit.Assert.*;
 
 public class RectangleTest {
     TextCanvas textCanvas;
