@@ -50,6 +50,8 @@ public class TextCanvas implements Canvas {
 
     @Override
     public void setPixel(int x, int y, int color) {
+        //assumption, we ignore out of bounds
+        if(x > width || y > height) return;
         buffer[(y - 1) * width + x - 1] = (char)color;
     }
 

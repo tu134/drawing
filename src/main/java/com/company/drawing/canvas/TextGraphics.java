@@ -7,10 +7,10 @@ import java.util.List;
 
 public class TextGraphics {
 
-    List<Drawable> drawables = new ArrayList<>();
-    Canvas canvas;
-    int height;
-    int width;
+    private List<Drawable> drawables = new ArrayList<>();
+    private Canvas canvas;
+    private final int height;
+    private final int width;
 
     public TextGraphics(int width, int height) {
         this.width = width;

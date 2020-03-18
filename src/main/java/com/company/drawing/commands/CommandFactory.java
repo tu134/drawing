@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class CommandFactory {
 
-    static public class CommandParams
+    static private class CommandParams
     {
         public CommandParams(String command, String[] args)
         {
