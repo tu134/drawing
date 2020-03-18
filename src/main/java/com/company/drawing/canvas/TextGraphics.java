@@ -16,7 +16,7 @@ public class TextGraphics {
         this.width = width;
         this.height = height;
         this.canvas = new TextCanvas();
-        this.canvas.init(width, height);
+        this.canvas.init(this.width, this.height);
     }
 
     public void addDrawable(Drawable drawable) {
