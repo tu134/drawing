@@ -22,8 +22,6 @@ Assume each cell will allocate at most 3 characters, thus numbers given here sho
 
 ### The Solution ###
 
-I was using `IDEA` to build and run main app and unit-tests.
-
 The main code having no much complexity which may call for extra comments or documentation and usage is illustrated by unit-tests and main app itself. 
 I was trying to balance and not to slip to over-design and over-commenting.  
 
@@ -31,8 +29,7 @@ Assumptions. The application does not prompt the user when lines (wholly or part
  
 ### Build and run ###
 
-I was using Java 12. If you using other version, several changes may be required.
-You can use IDEA or Maven to run main app and unit-tests. 
-*  IDEA. The main app and unit-tests can be built and ran in the usual way in IDEA
-*  Maven run main app: `mvn exec:java`, unit-tests: `mvn test`, create JAR: `mvn package`
-*  Run pre-built jar from command line `java -jar console-drawing-1.0.jar`
+I was using Java 12. If you using lower version, few changes will be required. I was using `IDEA` to build and run main app and unit-tests, which you also can do. 
+If you do not use  `IDEA` just run it via Maven, the simplest steps are:
+*  `mvn package` to build jar and run unit-tests in one go
+*  `java -jar target\console-drawing-1.0.jar` to run interactive console app 
