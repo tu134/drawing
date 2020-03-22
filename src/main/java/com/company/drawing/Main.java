@@ -1,29 +1,33 @@
 package com.company.drawing;
 
-import com.company.drawing.canvas.TextCanvas;
 import com.company.drawing.canvas.Graphics;
+import com.company.drawing.canvas.TextCanvas;
 import com.company.drawing.commands.*;
 import com.company.drawing.drawables.Drawable;
 import com.company.drawing.exceptions.CommandArgumentsException;
 import com.company.drawing.exceptions.CommandInvalidException;
 
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.io.PrintStream;
-import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class Main {
 
 
-    public static void loop(InputStream inputStream, PrintStream out, PrintStream err) {
+    public static void loop(InputStream inputStream, PrintStream out, boolean prompt) {
 
         Graphics graphics = null;
         CommandFactory commandFactory = new CommandFactory();
         Scanner in = new Scanner(inputStream);
 
-        while(in.hasNextLine()) {
-            out.println("enter command: \n");
+        while(true) {
+
+            if(prompt) {
+                out.print("enter command: ");
+                out.flush();
+            }
+
+            if(!in.hasNextLine()) break;
             String line = in.nextLine();
             if(line == null || line.trim().length() == 0) continue;
 
@@ -40,7 +44,7 @@ public class Main {
                 }
                 if(command instanceof DrawCommand) {
                     if(graphics == null) {
-                        err.println(String.format("Canvas not created yet."));
+                        out.println(String.format("Canvas not created yet."));
                         continue;
                     }
                     DrawCommand drawCommand = (DrawCommand)command;
@@ -50,17 +54,16 @@ public class Main {
 
                 out.println(graphics.toString());
             } catch (CommandInvalidException e) {
-                err.println(String.format("You entered invalid command."));
+                out.println(String.format("You entered invalid command."));
             } catch (CommandArgumentsException e) {
-                err.println(String.format("Invalid arguments for command."));
+                out.println(String.format("Invalid arguments for command."));
             } catch (Exception e) {
-                err.println(String.format("exception: %s", e.getMessage()));
+                out.println(String.format("exception: %s", e.getMessage()));
             }
         }
-
     }
 
     public static void main(String[] args) {
-        loop(System.in, System.out, System.err);
+        loop(System.in, System.out, true);
     }
 }
