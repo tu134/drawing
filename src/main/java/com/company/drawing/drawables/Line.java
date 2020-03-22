@@ -43,9 +43,12 @@ public class Line implements Drawable {
 
             for (int i = 0; i <= step; ++i)
             {
-                canvas.setPixel((int)Math.round(x), (int)Math.round(y));
-                x = x + dx;
-                y = y + dy;
+                int pixelX = (int)Math.round(x);
+                int pixelY = (int)Math.round(y);
+                if (pixelX >= 1 && pixelX <= canvas.getWidth() && pixelY >= 1 && pixelY <= canvas.getHeight())
+                    canvas.setPixel(pixelX, pixelY);
+                x += dx;
+                y += dy;
             }
         }
     }
