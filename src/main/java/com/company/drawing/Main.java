@@ -12,8 +12,7 @@ import java.io.PrintStream;
 import java.util.Scanner;
 
 public class Main {
-
-
+    
     public static void loop(InputStream inputStream, PrintStream out, boolean prompt) {
 
         Graphics graphics = null;
