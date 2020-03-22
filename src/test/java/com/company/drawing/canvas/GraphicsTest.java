@@ -10,12 +10,12 @@ import org.junit.Test;
 
 import static com.company.drawing.Utils.Convert;
 
-public class TextGraphicsTest {
-    private TextGraphics textGraphics;
+public class GraphicsTest {
+    private Graphics graphics;
 
     @Before
     public void setUp() throws Exception {
-        textGraphics = new TextGraphics(new TextCanvas(20, 4));
+        graphics = new Graphics(new TextCanvas(20, 4));
     }
 
     @After
@@ -24,10 +24,10 @@ public class TextGraphicsTest {
 
     @Test
     public void addDrawable() {
-        textGraphics.addDrawable(new Line(1, 2, 6, 2));
-        textGraphics.addDrawable(new Line(6, 3, 6, 4));
-        textGraphics.addDrawable(new Rectangle(14, 1, 18, 3));
-        textGraphics.addDrawable(new Fill(10, 3, 'o'));
+        graphics.addDrawable(new Line(1, 2, 6, 2));
+        graphics.addDrawable(new Line(6, 3, 6, 4));
+        graphics.addDrawable(new Rectangle(14, 1, 18, 3));
+        graphics.addDrawable(new Fill(10, 3, 'o'));
 
         String[] expected = {
                 "----------------------",
@@ -37,7 +37,7 @@ public class TextGraphicsTest {
                 "|     xoooooooooooooo|",
                 "----------------------"
         };
-        Assert.assertEquals(Convert(expected), textGraphics.toString());
+        Assert.assertEquals(Convert(expected), graphics.toString());
     }
 
     @Test

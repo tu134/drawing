@@ -5,12 +5,12 @@ import com.company.drawing.drawables.Drawable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TextGraphics {
+public class Graphics {
 
     private List<Drawable> drawables = new ArrayList<>();
     private Canvas canvas;
 
-    public TextGraphics(Canvas canvas) {
+    public Graphics(Canvas canvas) {
         this.canvas = canvas;
     }
 

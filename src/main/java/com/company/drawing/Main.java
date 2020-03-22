@@ -1,7 +1,7 @@
 package com.company.drawing;
 
 import com.company.drawing.canvas.TextCanvas;
-import com.company.drawing.canvas.TextGraphics;
+import com.company.drawing.canvas.Graphics;
 import com.company.drawing.commands.*;
 import com.company.drawing.drawables.Drawable;
 import com.company.drawing.exceptions.CommandArgumentsException;
@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        TextGraphics textGraphics = null;
+        Graphics graphics = null;
         CommandFactory commandFactory = new CommandFactory();
         Scanner in = new Scanner(System.in);
 
@@ -31,19 +31,19 @@ public class Main {
                 }
                 if(command instanceof CreateCommand) {
                     CreateCommand createCommand = (CreateCommand)command;
-                    textGraphics = new TextGraphics(new TextCanvas(createCommand.getWidth(), createCommand.getHeight()));
+                    graphics = new Graphics(new TextCanvas(createCommand.getWidth(), createCommand.getHeight()));
                 }
                 if(command instanceof DrawCommand) {
-                    if(textGraphics == null) {
+                    if(graphics == null) {
                         System.out.println(String.format("Canvas not created yet."));
                         continue;
                     }
                     DrawCommand drawCommand = (DrawCommand)command;
                     Drawable drawable = drawCommand.getDrawable();
-                    textGraphics.addDrawable(drawable);
+                    graphics.addDrawable(drawable);
                 }
 
-                System.out.println(textGraphics.toString());
+                System.out.println(graphics.toString());
             } catch (CommandInvalidException e) {
                 System.out.println(String.format("You entered invalid command."));
             } catch (CommandArgumentsException e) {
