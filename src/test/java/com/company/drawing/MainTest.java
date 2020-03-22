@@ -27,7 +27,5 @@ public class MainTest {
             e.printStackTrace();
             Assert.fail();
         }
-
-
     }
 }
