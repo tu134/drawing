@@ -15,11 +15,9 @@ public class CommandFactory {
             case "C":
                 return new CreateCommand(args);
             case "L":
-                return new LineCommand(args);
             case "R":
-                return new RectangleCommand(args);
             case "B":
-                return new FillCommand(args);
+                return new DrawCommand(command, args);
             case "Q":
                 return new ExitCommand();
             default:

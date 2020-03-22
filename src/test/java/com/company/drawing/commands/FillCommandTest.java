@@ -11,13 +11,12 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static com.company.drawing.Utils.Convert;
-import static org.junit.Assert.*;
 
 public class FillCommandTest {
     TextCanvas textCanvas;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         textCanvas = new TextCanvas(20, 4);
         new Line(1, 2, 6, 2).draw(textCanvas);
         new Line(6, 3, 6, 4).draw(textCanvas);
@@ -25,13 +24,13 @@ public class FillCommandTest {
     }
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() {
     }
 
     @Test
     public void execute() {
 
-        FillCommand fillCommand = new FillCommand(new String[] {"10", "3", "o"});
+        DrawCommand fillCommand = new DrawCommand("B", new String[] {"10", "3", "o"});
         Drawable drawable = fillCommand.getDrawable();
         Assert.assertTrue(drawable instanceof Fill);
         Fill fill = (Fill)drawable;

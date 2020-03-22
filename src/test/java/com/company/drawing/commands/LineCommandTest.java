@@ -14,17 +14,17 @@ public class LineCommandTest {
     TextCanvas textCanvas;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         textCanvas = new TextCanvas(20, 4);
     }
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() {
     }
 
     @Test
     public void execute() {
-        LineCommand lineCommand = new LineCommand(new String[]{"1", "2", "6", "2"});
+        DrawCommand lineCommand = new DrawCommand("L", new String[]{"1", "2", "6", "2"});
         Drawable drawable = lineCommand.getDrawable();
         Assert.assertTrue(drawable instanceof Line);
         Line line = (Line)drawable;
