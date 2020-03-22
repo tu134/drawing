@@ -1,6 +1,5 @@
 package com.company.drawing.commands;
 
-import com.company.drawing.canvas.Canvas;
 import com.company.drawing.exceptions.CommandArgumentsException;
 
 public class CreateCommand implements Command {
