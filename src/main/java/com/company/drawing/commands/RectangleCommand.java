@@ -21,10 +21,6 @@ public class RectangleCommand implements DrawCommand {
             int x2 = Integer.parseInt(args[2]);
             int y2 = Integer.parseInt(args[3]);
 
-            if(x1 < 0 || y1 < 0 || x2 < 0 || y2 < 0) {
-                throw new CommandArgumentsException();
-            }
-
             rectangle = new Rectangle(x1, y1, x2, y2);
 
         } catch (NumberFormatException e) {

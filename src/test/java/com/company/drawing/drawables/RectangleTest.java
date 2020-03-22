@@ -34,4 +34,18 @@ public class RectangleTest {
         };
         Assert.assertEquals(Convert(expected), textCanvas.toString());
     }
+
+    public void draw2() {
+        Rectangle rectangle = new Rectangle(-10, -10, 10, 2);
+        rectangle.draw(textCanvas);
+        String[] expected = {
+                "----------------------",
+                "|         x          |",
+                "|xxxxxxxxxx          |",
+                "|                    |",
+                "|                    |",
+                "----------------------"
+        };
+        Assert.assertEquals(Convert(expected), textCanvas.toString());
+    }
 }

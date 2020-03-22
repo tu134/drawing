@@ -20,10 +20,6 @@ public class FillCommand implements DrawCommand {
             int y = Integer.parseInt(args[1]);
             int color = args[2].charAt(0);
 
-            if(x < 0 || y < 0) {
-                throw new CommandArgumentsException();
-            }
-
             fill = new Fill(x, y, color);
 
         } catch (NumberFormatException | IndexOutOfBoundsException e) {

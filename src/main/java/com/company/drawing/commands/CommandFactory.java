@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class CommandFactory {
 
     public Command getCommand(String commandline) {
-        String[] args = commandline.split("\\W+");
+        String[] args = commandline.split("\\s+");
         String command = args[0];
         args = Arrays.copyOfRange(args, 1, args.length);
 
