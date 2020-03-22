@@ -12,7 +12,7 @@ import java.io.PrintStream;
 import java.util.Scanner;
 
 public class Main {
-    
+
     public static void loop(InputStream inputStream, PrintStream out, boolean prompt) {
 
         Graphics graphics = null;
@@ -43,7 +43,7 @@ public class Main {
                 }
                 if(command instanceof DrawCommand) {
                     if(graphics == null) {
-                        out.println(String.format("Canvas not created yet."));
+                        out.println("Canvas not created yet.");
                         continue;
                     }
                     DrawCommand drawCommand = (DrawCommand)command;
@@ -53,9 +53,9 @@ public class Main {
 
                 out.println(graphics.toString());
             } catch (CommandInvalidException e) {
-                out.println(String.format("You entered invalid command."));
+                out.println("You entered invalid command.");
             } catch (CommandArgumentsException e) {
-                out.println(String.format("Invalid arguments for command."));
+                out.println("Invalid arguments for command.");
             } catch (Exception e) {
                 out.println(String.format("exception: %s", e.getMessage()));
             }
