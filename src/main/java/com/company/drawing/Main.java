@@ -1,5 +1,6 @@
 package com.company.drawing;
 
+import com.company.drawing.canvas.TextCanvas;
 import com.company.drawing.canvas.TextGraphics;
 import com.company.drawing.commands.*;
 import com.company.drawing.drawables.Drawable;
@@ -30,7 +31,7 @@ public class Main {
                 }
                 if(command instanceof CreateCommand) {
                     CreateCommand createCommand = (CreateCommand)command;
-                    textGraphics = new TextGraphics(createCommand.getWidth(), createCommand.getHeight());
+                    textGraphics = new TextGraphics(new TextCanvas(createCommand.getWidth(), createCommand.getHeight()));
                 }
                 if(command instanceof DrawCommand) {
                     if(textGraphics == null) {

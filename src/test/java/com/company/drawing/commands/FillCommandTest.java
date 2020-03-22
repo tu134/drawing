@@ -18,8 +18,7 @@ public class FillCommandTest {
 
     @Before
     public void setUp() throws Exception {
-        textCanvas = new TextCanvas();
-        textCanvas.init(20, 4);
+        textCanvas = new TextCanvas(20, 4);
         new Line(1, 2, 6, 2).draw(textCanvas);
         new Line(6, 3, 6, 4).draw(textCanvas);
         new Rectangle(14, 1, 18, 3).draw(textCanvas);

@@ -15,8 +15,7 @@ public class LineCommandTest {
 
     @Before
     public void setUp() throws Exception {
-        textCanvas = new TextCanvas();
-        textCanvas.init(20, 4);
+        textCanvas = new TextCanvas(20, 4);
     }
 
     @After

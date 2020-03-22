@@ -15,7 +15,7 @@ public class TextGraphicsTest {
 
     @Before
     public void setUp() throws Exception {
-        textGraphics = new TextGraphics(20, 4);
+        textGraphics = new TextGraphics(new TextCanvas(20, 4));
     }
 
     @After

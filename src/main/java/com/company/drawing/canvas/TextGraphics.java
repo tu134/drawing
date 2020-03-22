@@ -9,14 +9,9 @@ public class TextGraphics {
 
     private List<Drawable> drawables = new ArrayList<>();
     private Canvas canvas;
-    private final int height;
-    private final int width;
 
-    public TextGraphics(int width, int height) {
-        this.width = width;
-        this.height = height;
-        this.canvas = new TextCanvas();
-        this.canvas.init(this.width, this.height);
+    public TextGraphics(Canvas canvas) {
+        this.canvas = canvas;
     }
 
     public void addDrawable(Drawable drawable) {

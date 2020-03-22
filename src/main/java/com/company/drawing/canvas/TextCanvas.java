@@ -11,15 +11,7 @@ public class TextCanvas implements Canvas {
     private int width;
     private int height;
 
-    public TextCanvas()
-    {
-        width = 0;
-        height = 0;
-        buffer = null;
-    }
-
-    @Override
-    public void init(int width, int height)
+    public TextCanvas(int width, int height)
     {
         if(width <= 0 || height <= 0) throw new IllegalArgumentException ();
         this.width = width;
