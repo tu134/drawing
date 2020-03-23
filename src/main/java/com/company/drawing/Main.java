@@ -29,11 +29,9 @@ public class Main {
             if(!in.hasNextLine()) break;
             String line = in.nextLine();
             if(line == null || line.trim().length() == 0) continue;
-
-            Command command;
-
+            
             try {
-                command = commandFactory.getCommand(line);
+                Command command = commandFactory.getCommand(line);
                 if(command instanceof ExitCommand) {
                     break;
                 }
