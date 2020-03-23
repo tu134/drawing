@@ -3,12 +3,12 @@ package com.company.drawing;
 import com.company.drawing.canvas.Graphics;
 import com.company.drawing.canvas.TextCanvas;
 import com.company.drawing.commands.*;
-import com.company.drawing.drawables.Drawable;
 import com.company.drawing.exceptions.CommandArgumentsException;
 import com.company.drawing.exceptions.CommandInvalidException;
 
 import java.io.InputStream;
 import java.io.PrintStream;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -16,10 +16,9 @@ public class Main {
     public static void loop(InputStream inputStream, PrintStream out, boolean prompt) {
 
         Graphics graphics = null;
-        CommandFactory commandFactory = new CommandFactory();
         Scanner in = new Scanner(inputStream);
 
-        while(true) {
+        mainLoop: while(true) {
 
             if(prompt) {
                 out.print("enter command: ");
@@ -29,27 +28,35 @@ public class Main {
             if(!in.hasNextLine()) break;
             String line = in.nextLine();
             if(line == null || line.trim().length() == 0) continue;
-            
+
             try {
-                Command command = commandFactory.getCommand(line);
-                if(command instanceof ExitCommand) {
-                    break;
-                }
-                if(command instanceof CreateCommand) {
-                    CreateCommand createCommand = (CreateCommand)command;
-                    graphics = new Graphics(new TextCanvas(createCommand.getWidth(), createCommand.getHeight()));
-                }
-                if(command instanceof DrawCommand) {
-                    if(graphics == null) {
-                        out.println("Canvas not created yet.");
-                        continue;
-                    }
-                    DrawCommand drawCommand = (DrawCommand)command;
-                    Drawable drawable = drawCommand.getDrawable();
-                    graphics.addDrawable(drawable);
+                String[] args = line.split("\\s+");
+                String command = args[0];
+                args = Arrays.copyOfRange(args, 1, args.length);
+
+                switch (command) {
+                    case "C":
+                        CreateCommand createCommand = new CreateCommand(args);
+                        graphics = new Graphics(new TextCanvas(createCommand.getWidth(), createCommand.getHeight()));
+                        break;
+                    case "L":
+                    case "R":
+                    case "B":
+                        if(graphics == null) {
+                            out.println("Canvas not created yet.");
+                            continue mainLoop;
+                        }
+                        DrawCommand drawCommand = new DrawCommand(command, args);
+                        graphics.addDrawable(drawCommand.getDrawable());
+                        break;
+                    case "Q":
+                        break mainLoop;
+                    default:
+                        throw new CommandInvalidException();
                 }
 
                 out.println(graphics.toString());
+
             } catch (CommandInvalidException e) {
                 out.println("You entered invalid command.");
             } catch (CommandArgumentsException e) {
