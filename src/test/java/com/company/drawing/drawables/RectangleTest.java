@@ -12,18 +12,18 @@ public class RectangleTest {
     TextCanvas textCanvas;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         textCanvas = new TextCanvas(20, 4);
     }
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() {
     }
 
     @Test
     public void draw() {
-        Rectangle rectangle = new Rectangle(14, 1, 18, 3);
-        rectangle.draw(textCanvas);
+        new Rectangle(14, 1, 18, 3).draw(textCanvas);
+
         String[] expected = {
                 "----------------------",
                 "|             xxxxx  |",
@@ -32,12 +32,13 @@ public class RectangleTest {
                 "|                    |",
                 "----------------------"
         };
+
         Assert.assertEquals(Convert(expected), textCanvas.toString());
     }
 
     public void draw2() {
-        Rectangle rectangle = new Rectangle(-10, -10, 10, 2);
-        rectangle.draw(textCanvas);
+        new Rectangle(-10, -10, 10, 2).draw(textCanvas);
+
         String[] expected = {
                 "----------------------",
                 "|         x          |",
@@ -46,6 +47,7 @@ public class RectangleTest {
                 "|                    |",
                 "----------------------"
         };
+
         Assert.assertEquals(Convert(expected), textCanvas.toString());
     }
 }

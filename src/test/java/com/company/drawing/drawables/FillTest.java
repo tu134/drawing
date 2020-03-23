@@ -12,12 +12,12 @@ public class FillTest {
     TextCanvas textCanvas;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         textCanvas = new TextCanvas(20, 4);
     }
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() {
     }
 
     @Test
@@ -25,9 +25,8 @@ public class FillTest {
         new Line(1, 2, 6, 2).draw(textCanvas);
         new Line(6, 3, 6, 4).draw(textCanvas);
         new Rectangle(14, 1, 18, 3).draw(textCanvas);
+        new Fill(10, 3, 'o').draw(textCanvas);
 
-        Fill fill = new Fill(10, 3, 'o');
-        fill.draw(textCanvas);
         String[] expected = {
                 "----------------------",
                 "|oooooooooooooxxxxxoo|",
@@ -44,9 +43,8 @@ public class FillTest {
         new Line(2, 1, 17, 3).draw(textCanvas);
         new Line(2, 1, 1, 4).draw(textCanvas);
         new Line(17, 3, 1, 4).draw(textCanvas);
+        new Fill(5, 3, 'y').draw(textCanvas);
 
-        Fill fill = new Fill(5, 3, 'y');
-        fill.draw(textCanvas);
         String[] expected = {
                 "----------------------",
                 "| xxxx               |",

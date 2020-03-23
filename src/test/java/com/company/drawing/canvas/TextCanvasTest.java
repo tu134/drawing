@@ -10,12 +10,12 @@ public class TextCanvasTest {
     TextCanvas textCanvas;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         textCanvas = new TextCanvas(20, 4);
     }
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() {
     }
 
     @Test

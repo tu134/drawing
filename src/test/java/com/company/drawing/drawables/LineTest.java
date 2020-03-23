@@ -12,18 +12,18 @@ public class LineTest {
     TextCanvas textCanvas;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         textCanvas = new TextCanvas(20, 4);
     }
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() {
     }
 
     @Test
     public void draw() {
-        Line line = new Line(1, 2, 6, 2);
-        line.draw(textCanvas);
+        new Line(1, 2, 6, 2).draw(textCanvas);
+
         String[] expected1 = {
                 "----------------------",
                 "|                    |",
@@ -34,8 +34,8 @@ public class LineTest {
         };
         Assert.assertEquals(Convert(expected1), textCanvas.toString());
 
-        line = new Line(6, 3, 6, 4);
-        line.draw(textCanvas);
+        new Line(6, 3, 6, 4).draw(textCanvas);
+
         String[] expected2 = {
                 "----------------------",
                 "|                    |",
@@ -49,8 +49,8 @@ public class LineTest {
 
     @Test
     public void draw2() {
-        Line line = new Line(2, 1, 17, 3);
-        line.draw(textCanvas);
+        new Line(2, 1, 17, 3).draw(textCanvas);
+
         String[] expected2 = {
                 "----------------------",
                 "| xxxx               |",
@@ -59,13 +59,14 @@ public class LineTest {
                 "|                    |",
                 "----------------------"
         };
+
         Assert.assertEquals(Convert(expected2), textCanvas.toString());
     }
 
     @Test
     public void draw3() {
-        Line line = new Line(-10, 2, 50, 2);
-        line.draw(textCanvas);
+        new Line(-10, 2, 50, 2).draw(textCanvas);
+
         String[] expected2 = {
                 "----------------------",
                 "|                    |",
@@ -74,13 +75,14 @@ public class LineTest {
                 "|                    |",
                 "----------------------"
         };
+
         Assert.assertEquals(Convert(expected2), textCanvas.toString());
     }
 
     @Test
     public void draw5() {
-        Line line = new Line(-10, -10, 10, 2);
-        line.draw(textCanvas);
+        new Line(-10, -10, 10, 2).draw(textCanvas);
+
         String[] expected2 = {
                 "----------------------",
                 "|       xx           |",
@@ -89,6 +91,7 @@ public class LineTest {
                 "|                    |",
                 "----------------------"
         };
+
         Assert.assertEquals(Convert(expected2), textCanvas.toString());
     }
 

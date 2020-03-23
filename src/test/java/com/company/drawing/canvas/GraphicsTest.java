@@ -14,12 +14,12 @@ public class GraphicsTest {
     private Graphics graphics;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         graphics = new Graphics(new TextCanvas(20, 4));
     }
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() {
     }
 
     @Test
